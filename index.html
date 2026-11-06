@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover the rich and diverse culinary traditions of Africa. Explore African recipes, food cultures and delicious dishes.">
+
+    <title>Tastes of Africa | Discover African Cuisine</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Tastes<span> of Africa</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+    🌙 Dark Mode
+</button>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">A JOURNEY THROUGH AFRICAN CUISINE</p>
+
+                <h1>Discover the Flavours of Africa</h1>
+
+                <p>
+                    From the spicy kitchens of West Africa to the
+                    aromatic dishes of East Africa, discover the
+                    stories, traditions and flavours behind every meal.
+                </p>
+
+                <a href="recipes.html" class="btn">
+                    Explore Recipes
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION SECTION -->
+        <section class="introduction">
+
+            <h2>More Than Just Food</h2>
+
+            <p>
+                African cuisine is a beautiful expression of culture,
+                history and community. Every dish tells a story,
+                bringing together traditional ingredients, unique
+                cooking techniques and generations of knowledge.
+            </p>
+
+            <p>
+                Discover the magic of <mark>traditional spices</mark>,
+                local ingredients and the people who keep African
+                food traditions alive.
+            </p>
+
+        </section>
+
+
+        <!-- AFRICAN FOOD VIDEO -->
+        <section class="video-section">
+
+            <h2>Experience African Food Culture</h2>
+
+            <p>
+                Explore the beauty and diversity of African cooking.
+            </p>
+
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Introduction to African Food Culture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED DISHES -->
+        <section class="featured-dishes">
+
+            <h2>Explore Our Featured Dishes</h2>
+
+            <p class="section-description">
+                Taste the diversity of Africa through its most
+                loved traditional meals.
+            </p>
+<div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="west-africa">West Africa</button>
+    <button class="filter-btn" data-filter="east-africa">East Africa</button>
+    <button class="filter-btn" data-filter="north-africa">North Africa</button>
+</div>
+            <div class="dish-container">
+
+               
+<figure class="dish-card" data-region="west-africa" data-id="jollof">
+
+    <img src="images/jollof.jpeg"
+         alt="Traditional West African Jollof rice">
+
+    <figcaption>
+        <h3>Jollof Rice</h3>
+
+        <p>
+            A delicious West African rice dish
+            cooked with tomatoes, peppers and spices.
+        </p>
+
+        <a href="recipes.html">Discover Recipe</a>
+
+        <!-- Favorite Button -->
+        <button class="favorite-btn" data-recipe-id="jollof">
+            ❤️ Favorite
+        </button>
+
+    </figcaption>
+
+</figure>
+
+
+
+                <figure class="dish-card" data-region="east-africa" data-id="injera">
+
+                    <img src="images/injera.jpeg"
+                         alt="Ethiopian injera served with traditional stews">
+
+                    <figcaption>
+                        <h3>Injera</h3>
+
+                        <p>
+                            A traditional Ethiopian flatbread
+                            served with colourful stews.
+                        </p>
+
+                        <a href="recipes.html">Discover Recipe</a>
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="dish-card" data-region="north-africa" data-id="tagine">
+
+                    <img src="images/tagine.jpeg"
+                         alt="Moroccan chicken tagine with vegetables">
+
+                    <figcaption>
+                        <h3>Moroccan Tagine</h3>
+
+                        <p>
+                            A slow-cooked dish filled with aromatic
+                            spices, vegetables and tender meat.
+                        </p>
+
+                        <a href="recipes.html">Discover Recipe</a>
+                    </figcaption>
+
+                </figure>
+
+
+                <figure class="dish-card" data-region="central-africa" data-id="isombe">
+
+                    <img src="images/isombe.jpeg"
+                         alt="Traditional Rwandan isombe dish">
+
+                    <figcaption>
+                        <h3>Isombe</h3>
+
+                        <p>
+                            A popular Rwandan dish made with
+                            cassava leaves, often served with
+                            beans or other traditional sides.
+                        </p>
+
+                        <a href="recipes.html">Discover Recipe</a>
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPLORE BY REGION -->
+        <section class="regions-section">
+
+            <h2>Explore Africa by Region</h2>
+
+            <p>
+                Every region has its own unique food traditions.
+                Discover what makes each one special.
+            </p>
+
+            <div class="region-container">
+
+                <article class="region-card">
+                    <h3>West Africa</h3>
+                    <p>
+                        Famous for bold flavours, rich stews,
+                        groundnuts and delicious Jollof rice.
+                    </p>
+                    <a href="regions.html">Explore Region</a>
+                </article>
+
+
+                <article class="region-card">
+                    <h3>East Africa</h3>
+                    <p>
+                        Known for dishes like Injera, Ugali,
+                        Isombe and traditional spices.
+                    </p>
+                    <a href="regions.html">Explore Region</a>
+                </article>
+
+
+                <article class="region-card">
+                    <h3>North Africa</h3>
+                    <p>
+                        Celebrated for aromatic spices,
+                        couscous, tagines and Mediterranean
+                        influences.
+                    </p>
+                    <a href="regions.html">Explore Region</a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- LATEST FOOD TRENDS -->
+        <section class="food-trends">
+
+            <h2>Latest Food Stories</h2>
+
+            <div class="trends-container">
+
+                <article class="trend-card">
+
+                    <h3>African Cuisine Goes Global</h3>
+
+                    <p>
+                        African dishes are gaining recognition
+                        around the world, introducing new audiences
+                        to traditional flavours and ingredients.
+                    </p>
+
+                </article>
+
+
+                <article class="trend-card">
+
+                    <h3>Rediscovering Traditional Ingredients</h3>
+
+                    <p>
+                        Ingredients such as cassava, millet,
+                        sorghum and local vegetables continue
+                        to inspire modern African cooking.
+                    </p>
+
+                </article>
+
+
+                <article class="trend-card">
+
+                    <h3>The Rise of African Food Creators</h3>
+
+                    <p>
+                        Food creators are sharing African recipes
+                        and cooking traditions with audiences
+                        through digital platforms.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>Tastes of Africa</h2>
+
+            <p>
+                Celebrating African food, culture and traditions,
+                one dish at a time.
+            </p>
+
+            <form class="newsletter-form">
+
+                <label for="newsletter-email">
+                    Subscribe to our newsletter
+                </label>
+
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    required>
+
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+            <p class="copyright">
+                &copy; 2026 Tastes of Africa. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

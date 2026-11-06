@@ -1,0 +1,663 @@
+/* 1. GOOGLE FONTS AND GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #FFF8ED;
+    color: #38251D;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #8F3827;
+    margin-bottom: 15px;
+}
+
+section > p {
+    text-align: center;
+}
+
+
+/* =================================
+   2. NAVIGATION BAR
+================================= */
+
+header {
+    background-color: #FFF8ED;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #8F3827;
+}
+
+.logo span {
+    color: #D99A22;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #B84A2F;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   3. HERO SECTION
+================================= */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(30, 17, 10, 0.65),
+            rgba(30, 17, 10, 0.65)
+        ),
+        url("images/jollof-rice.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-subtitle {
+    color: #F4C65E;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.hero-subtitle) {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #D99A22;
+    color: #38251D;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFF8ED;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   4. INTRODUCTION
+================================= */
+
+.introduction {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.introduction p {
+    margin-top: 15px;
+    font-size: 1.05rem;
+}
+
+mark {
+    background-color: #F5D78E;
+    color: #71351F;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+
+/* =================================
+   5. VIDEO SECTION
+================================= */
+
+.video-section {
+    background-color: #F4E9D8;
+    text-align: center;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 30px auto 0;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+
+/* =================================
+   6. FEATURED DISHES
+================================= */
+
+.section-description {
+    margin-bottom: 35px;
+}
+
+.dish-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.dish-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.dish-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.dish-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.dish-card figcaption {
+    padding: 20px;
+}
+
+.dish-card h3 {
+    color: #9B422C;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.dish-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.dish-card a {
+    color: #B84A2F;
+    font-weight: 700;
+}
+
+.dish-card a:hover {
+    color: #D99A22;
+}
+
+
+/* =================================
+   7. CULINARY REGIONS
+================================= */
+
+.regions-section {
+    background-color: #F4E9D8;
+}
+
+.region-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.region-card {
+    background-color: #FFF8ED;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #D99A22;
+    transition: 0.3s;
+}
+
+.region-card:hover {
+    transform: translateY(-5px);
+}
+
+.region-card h3 {
+    color: #8F3827;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.region-card p {
+    margin-bottom: 20px;
+}
+
+.region-card a {
+    color: #B84A2F;
+    font-weight: 700;
+}
+
+
+/* =================================
+   8. FOOD TRENDS
+================================= */
+
+.trends-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.trend-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.trend-card h3 {
+    color: #8F3827;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+
+/* =================================
+   9. FOOTER
+================================= */
+
+footer {
+    background-color: #38251D;
+    color: white;
+    padding: 55px 8% 25px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    color: #F4C65E;
+    margin-bottom: 15px;
+}
+
+.footer-content > p {
+    margin-bottom: 25px;
+}
+
+.newsletter-form {
+    max-width: 450px;
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form label {
+    width: 100%;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 180px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.newsletter-form button {
+    background-color: #D99A22;
+    color: #38251D;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #F4C65E;
+}
+
+.copyright {
+    border-top: 1px solid #705C4E;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+
+/* =================================
+   10. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 1000px) {
+
+    .dish-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .region-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trends-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .dish-container,
+    .region-container,
+    .trends-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dish-card img {
+        height: 230px;
+    }
+}
+/* RECIPE FILTER BUTTONS */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.filter-btn {
+    padding: 10px 22px;
+    border: 1px solid #B84A2F;
+    border-radius: 25px;
+    background: transparent;
+    color: #8F3827;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #B84A2F;
+    color: white;
+}
+
+/* FAVORITE BUTTON */
+.favorite-btn {
+    margin-top: 12px;
+    padding: 9px 15px;
+    border: 1px solid #B84A2F;
+    border-radius: 20px;
+    background: white;
+    color: #B84A2F;
+    cursor: pointer;
+    font: inherit;
+}
+
+.favorite-btn.saved {
+    background: #B84A2F;
+    color: white;
+}
+
+/* INGREDIENT SCALER */
+
+.ingredient-scaler {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.ingredient-scaler label {
+    font-weight: 700;
+    color: #8F3827;
+}
+
+.ingredient-scaler input {
+    width: 90px;
+    padding: 10px;
+    border: 1px solid #D99A22;
+    border-radius: 8px;
+    font: inherit;
+}
+
+/* NUTRITION TABLE */
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FFF8ED;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+    padding: 13px;
+    text-align: left;
+    border: 1px solid #E5D5C2;
+}
+
+.nutrition-table th {
+    background-color: #8F3827;
+    color: white;
+}
+
+.nutrition-table tr:nth-child(even) {
+    background-color: #F4E9D8;
+}
+/* DARK MODE */
+body.dark-mode {
+    background-color: #1E1E1E;
+    color: #F5F5F5;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #292929;
+}
+
+body.dark-mode section {
+    background-color: #252525;
+    color: #F5F5F5;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+    color: #F5F5F5;
+}
+
+/* THEME BUTTON */
+.theme-toggle {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #D99A22;
+    color: #1E1E1E;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.theme-toggle:hover {
+    background-color: #F0B83E;
+}
+
+/* GENERAL PAGE SECTIONS */
+.page-intro,
+.about-section,
+.region-section,
+.contact-section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #FFF8ED;
+    color: #3D2B1F;
+}
+
+/* PAGE HEADINGS */
+.page-intro h1,
+.about-section h2,
+.region-section h2,
+.contact-section h1 {
+    color: #8F3827;
+    margin-bottom: 15px;
+}
+
+/* REGION IMAGES */
+.region-section img {
+    width: 100%;
+    max-width: 450px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* REGION AND ABOUT LINKS */
+.region-section a,
+.about-section a {
+    color: #8F3827;
+    font-weight: bold;
+}
+
+/* CONTACT FORM */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #D9B99B;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#contact-form button {
+    padding: 13px;
+    background-color: #8F3827;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#thank-you-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #477A3C;
+}
+
+/* DARK MODE FOR NEW PAGES */
+body.dark-mode .page-intro,
+body.dark-mode .about-section,
+body.dark-mode .region-section,
+body.dark-mode .contact-section {
+    background-color: #252525;
+    color: #F5F5F5;
+}
+
+body.dark-mode .page-intro h1,
+body.dark-mode .about-section h2,
+body.dark-mode .region-section h2,
+body.dark-mode .contact-section h1 {
+    color: #F0B83E;
+}
