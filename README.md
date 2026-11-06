@@ -8,7 +8,7 @@ The website was developed using HTML5, CSS3, and JavaScript to create an attract
 
 ## 🌍 Live Website
 
-[Visit Tastes of Africa]()
+[Visit Tastes of Africa](https://leam103.github.io/taste_of_africa_website_project/)
 
 ## 🎯 Project Objectives
 
